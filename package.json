@@ -1,7 +1,7 @@
 {
   "name": "bxenv",
   "version": "1.0.0",
-  "description": "",
+  "description": "The most faster development environment for bitrix",
   "main": "index.js",
   "bin": {
     "bxenv": "bxenv.js"
@@ -16,7 +16,7 @@
     "test2": "node ./test/test.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "direct808",
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^2.2.0"
@@ -29,5 +29,16 @@
     "mkdirp": "^0.5.1",
     "portchecker": "^0.1.2",
     "portscanner": "^1.0.0"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/direct808/bxenv.git"
+  },
+  "bugs": {
+    "url": "https://github.com/direct808/bxenv/issues"
+  },
+  "homepage": "https://github.com/direct808/bxenv#readme"
 }

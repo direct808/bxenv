@@ -1,5 +1,4 @@
 .idea/
 /node_modules/
-/test/project1/*
-/test/project2/*
+/test/proj*
 /npm-debug.log
