@@ -1,0 +1,33 @@
+{
+  "name": "bxenv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "bxenv": "bxenv.js"
+  },
+  "scripts": {
+    "clear_test": "cd test && clear",
+    "project1_init": "cd test/project1 && node ../../index.js init",
+    "project1_start": "cd test/project1 && node ../../index.js start",
+    "project2_init": "cd test/project2 && node ../../index.js init",
+    "project2_start": "cd test/project2 && node ../../index.js start",
+    "test": "npm run clear_test && concurrently 'npm run project1_init' 'npm run project2_init'",
+    "test2": "node ./test/test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^2.2.0"
+  },
+  "dependencies": {
+    "@justinc/dir-exists": "^2.0.2",
+    "better-console": "^0.2.4",
+    "copy-dir": "^0.3.0",
+    "ini-builder": "^1.0.3",
+    "mkdirp": "^0.5.1",
+    "portchecker": "^0.1.2",
+    "portscanner": "^1.0.0"
+  }
+}
