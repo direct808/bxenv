@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "bin": {
-    "bxenv": "bxenv.js"
-  },
+  "bin": "./bin/bxenv.js",
   "scripts": {
     "clear_test": "cd test && clear",
     "project1_init": "cd test/project1 && node ../../index.js init",
