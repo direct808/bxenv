@@ -1,40 +1,28 @@
 #!/usr/bin/env node
 
 'use strict';
+switch (process.argv[2]) {
+    case 'init':
+        require('../lib/init');
+        break;
+    case 'start':
+        require('../lib/start');
+        break;
+    case 'sendmail':
+        // require('../lib/start');
+        break;
 
-const fs = require('fs');
-
-// const commander = require('commander');
-//
-// commander
-//     .version('0.0.1')
-//     .command('start','bla')
-//     // .action(function (cmd, env) {
-//     //     console.log('action',cmd);
-//     // })
-//     .parse(process.argv);
-
-// console.log(commander);
-
-// process.exit();
-
-if (process.argv[2] == 'init') {
-    require('../init');
 }
 
-if (process.argv[2] == 'start') {
-    require('../start');
-}
-
-if (process.argv[2] == 'sendmail') {
-    process.stdin.on('readable', () => {
-        var chunk = process.stdin.read();
-        if (chunk !== null) {
-            fs.appendFile('c:/asdasd.txt', chunk);
-            // process.stdout.write(`data: ${chunk}`);
-        }
-    });
-}
+// if (process.argv[2] == 'sendmail') {
+//     process.stdin.on('readable', () => {
+//         var chunk = process.stdin.read();
+//         if (chunk !== null) {
+//             fs.appendFile('c:/asdasd.txt', chunk);
+//             // process.stdout.write(`data: ${chunk}`);
+//         }
+//     });
+// }
 
 
 /*

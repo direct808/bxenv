@@ -1,6 +1,4 @@
 <?
-define("SHORT_INSTALL", true);
-define("SHORT_INSTALL_CHECK", true);
 
 define("MYSQL_TABLE_TYPE", "INNODB");
 define("BX_UTF", true);
