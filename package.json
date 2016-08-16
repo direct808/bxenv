@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "bin": {
-    "bxenv": "bxenv.js"
-  },
+  "bin": "./bin/bxenv.js",
   "scripts": {
     "clear_test": "cd test && clear",
     "project1_init": "cd test/project1 && node ../../index.js init",
@@ -36,6 +34,7 @@
     "copy-dir": "^0.3.0",
     "ini-builder": "^1.0.3",
     "mkdirp": "^0.5.1",
+    "opener": "^1.4.1",
     "portchecker": "^0.1.2",
     "portscanner": "^1.0.0"
   }
