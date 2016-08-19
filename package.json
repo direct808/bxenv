@@ -28,6 +28,12 @@
   "devDependencies": {
     "concurrently": "^2.2.0"
   },
+  "os": [
+    "win32"
+  ],
+  "cpu": [
+    "x64"
+  ],
   "dependencies": {
     "@justinc/dir-exists": "^2.0.2",
     "better-console": "^0.2.4",
