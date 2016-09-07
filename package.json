@@ -37,8 +37,11 @@
   "dependencies": {
     "@justinc/dir-exists": "^2.0.2",
     "better-console": "^0.2.4",
+    "commander": "^2.9.0",
     "copy-dir": "^0.3.0",
+    "file-exists": "^2.0.0",
     "ini-builder": "^1.0.3",
+    "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
     "opener": "^1.4.1",
     "portchecker": "^0.1.2",
